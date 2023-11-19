@@ -1,25 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
+import TaskInputForm from './TaskInputForm';
+import TaskList from './TaskList';
+import TaskNotesSection from './TaskNotesSection';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Task List</h1>
+      <TaskInputForm />
+      <TaskList />
+      <TaskNotesSection />
     </div>
   );
 }
-
 export default App;
